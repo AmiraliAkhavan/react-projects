@@ -1,8 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import SearchBar from "./components/searchBar";
+import searchImages from "./api";
+import ImageList from "./components/ImageList";
+import { useState } from "react";
 
-const el = document.getElementById("root");
-const root = ReactDOM.createRoot(el);
+function App() {
+  const [images, setImages] = useState([]);
 
-root.render(<App />);
+  const handleSubmit = async (term) => {
+    const result = await searchImages(term);
+
+    setImages(result);
+  };
+
+  return (
+    <div>
+      <SearchBar onSubmit={handleSubmit} />
+      <ImageList images={images} />
+    </div>
+  );
+}
+
+export default App;
