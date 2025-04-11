@@ -1,8 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import CarList from "./components/CarList";
+import CarForm from "./components/CarForm";
+import CarSearch from "./components/CarSearch";
+import CarValue from "./components/CarValue";
 
-const el = document.getElementById("root");
-const root = ReactDOM.createRoot(el);
+function App() {
+  return (
+    <div className="container is-fluid">
+      <CarForm />
+      <CarSearch />
+      <CarList />
+      <CarValue />
+    </div>
+  );
+}
 
-root.render(<App />);
+export default App;
