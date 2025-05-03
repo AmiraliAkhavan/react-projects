@@ -1,8 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import UsersList from "./components/UsersList";
 
-const el = document.getElementById("root");
-const root = ReactDOM.createRoot(el);
+function App() {
+  return (
+    <div className="container mx-auto">
+      <UsersList />
+    </div>
+  );
+}
 
-root.render(<App />);
+export default App;

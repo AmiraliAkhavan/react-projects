@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Myra"
+    }
+  ],
+  "albums": [
+    {
+      "id": "10",
+      "title": "Trip",
+      "userId": 1
+    },
+    {
+      "id": "93db",
+      "userId": null,
+      "title": "Recycled Granite Shirt"
+    },
+    {
+      "id": "44d4",
+      "userId": "1",
+      "title": "Small Concrete Pants"
+    }
+  ],
+  "photos": [
+    {
+      "id": "796a",
+      "url": "https://loremflickr.com/150/150/abstract?lock=28320"
+    },
+    {
+      "id": "46a3",
+      "url": "https://loremflickr.com/150/150/abstract?lock=62656"
+    }
+  ]
+}
