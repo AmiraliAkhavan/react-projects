@@ -76,3 +76,10 @@ export const {
 } = photosApi;
 
 export { photosApi };
+
+let value;
+
+if (Array.isArray(value)) {
+}
+if (typeof value === "object" && !Array.isArray(value)) {
+}
